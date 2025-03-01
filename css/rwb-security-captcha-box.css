@@ -1,0 +1,94 @@
+﻿@charset "UTF-8";
+
+
+a.rwb_refresh_captcha {
+    background: url('../../../imgs/common/widgets/widget_captcha/recargar.png');
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    margin: 4px 0 10px 10px;
+}
+
+.rwb_captcha_image{
+    border: 1px solid #CCC;
+    float: left;
+    height: auto;
+    width: auto;
+}
+
+.rwb_captcha_title{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+.rwb_captcha_label{
+    margin: 10px 0 4px 0;
+    font-weight:bold;
+    font-size:12px;
+}
+
+
+/* Redesing HB*/
+.rwb_captcha_image_rdhb {
+    width: 162px;
+    height: 76px;
+    border: solid 1px #f5f1f0;
+    background-color: #ffffff;
+}
+
+.rwb_refresh_captcha_rdhb{
+   background: url(../../../imgs/common/widgets/icon_reload.png);
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    margin: 20px 10px 10px 10px;
+    margin-top: -60px;
+}
+
+.rwb_captcha_label_rdhb {
+    width: 127px;
+    height: 20px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #605751;
+}
+
+.rwb_placeholder_rdhb
+{
+     width: 152px;
+      height: 32px;
+      font-family: Arial;
+      font-size: 20px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.6;
+      letter-spacing: normal;
+      color: #969290 !important;
+}
+
+.rwb_captcha_img_container_rdhb
+{
+    width: 230px;
+    float: left;
+}
+
+#rwb_captcha_container
+{
+    float: right; 
+    width: 65%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}

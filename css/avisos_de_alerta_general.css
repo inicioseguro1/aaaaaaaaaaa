@@ -1,0 +1,475 @@
+﻿@charset "UTF-8";
+
+/* Panel de Noticias Generales del index*/
+.rwb_aviso_alerta_general_container{    
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.rwb_aviso_alerta_general {
+    position: relative;
+    float: left;
+    background-color: #fff;    
+    background-repeat: no-repeat;
+    background-position: top left;    
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #464646;
+    width: 100%;
+}
+
+.rwb_aviso_alerta_general .rwb_aviso_alerta_general_content {
+    position: relative;
+    float: left;
+    margin: 14px 6px 10px 33px;
+    border: 0 !important;
+}
+
+.rwb_aviso_alerta_general strong {
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+/* rwb_box_info
+    Se utiliza para los paneles que contienen el mensaje de alerta.  
+    
+    Ejemplo de uso:
+
+    // Estructura
+
+     <div class="rwb_transaccion_confirmada_wrapper_print">
+        <img class="rwb_transaccion_icono_exito_print" src="@Url.Content("~/imgs/common/widgets/widget_transaccion_confirmada/icono_exito.gif")" />
+        <div class="rwb_transaccion_confirmada_content">
+            <div class="rwb_transaccion_confirmada_strong"> transacción realizada con éxito</div>
+            tu petici&oacute;n ha sido realizada con éxito.
+        </div>
+    </div>
+*/
+
+.rwb_box_alerta {
+	width:100%;
+	position:relative;
+	float:left;
+	background-color:#fff;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	font-size:12px;
+    line-height: 16px;
+	margin:0 0 10px 0;
+	color:#ff0000;
+}
+
+.rwb_box_info {
+	width:100%;
+	position:relative;
+	float:left;
+	background-color:#fff;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	font-size:12px;
+    line-height: 16px;
+	margin:0 0 10px 0;
+	color:#464646;
+}
+
+.rwb_box_info a {
+	color:#464646;
+}
+
+.rwb_box_info span.icono {     
+	display: block; 
+    width: 24px; 
+    height: 24px; 
+    position: absolute; 
+    margin-left: 5px; 
+    margin-top: 5px;
+}
+
+.rwb_box_info_gris {
+    background-color: #333333;
+    font-size: 13px;
+    border-color: #333333;            
+}
+
+.rwb_box_info_gris .validation-summary-errors {
+    color: white; 
+}  
+
+.rwb_box_info_gris span.icono {     
+	display: block; 
+    width: 35px; 
+    height: 35px; 
+    position: absolute; 
+    margin-left: 10px !important; 
+    margin-top: 0px !important;
+    z-index: 2;
+    vertical-align: middle;
+}
+
+.rwb_box_info strong {
+	font-weight:bold;
+}
+
+.rwb_box_info .contenido {
+	position:relative;
+	float:left;
+	margin: 10px 6px 10px 35px;
+	border:0 !important;
+}
+
+.rwb_box_info_gris .contenido {
+	position:relative;
+	float:left;
+	margin: 10px 6px 10px 50px;
+	border:0 !important;    
+}
+
+.rwb_box_white {
+	position:absolute;
+	width: 125px;    
+    position: absolute;
+    background-color: #fff;
+    width: 4px; 
+    height: 14px; 
+    margin-left: 24px;
+    margin-top: 12px;
+    z-index: 1;
+}
+
+.rwb_box_info.fix .contenido {
+	margin-top:12px;
+}
+
+.rwb_box_info .cerrar {
+	position:absolute;
+	top:10px;
+	right:10px;
+	cursor:pointer;
+	width:11px;
+	height:10px;
+	background:url('../../imgs/common/avisos_atencion/icon-close.png') 0 0 no-repeat;
+}
+
+.reloj {
+    position:absolute;
+    top:12px;
+    margin-right:5px;
+    width:20px;
+	height:20px;
+	background:url('../../imgs/common/avisos_atencion/icon-reloj.png') 0 0 no-repeat;
+}
+
+.rwb_box_info .cerrar:hover{
+    background-position: 0 -9px;
+    cursor: pointer;
+}
+
+.rwb_box_info .boton {
+	position:absolute;
+	right:38px;
+	top:8px;
+	width:65px;
+	text-align:center;
+	color:#fff;
+	text-transform:lowercase;
+	font-size:11px;
+	font-weight:bold;
+	background-color:#464646;
+	-webkit-transition: all 300ms linear;
+	-moz-transition: all 300ms linear;
+	-ms-transition: all 300ms linear;
+	-o-transition: all 300ms linear;
+	transition: all 300ms linear;
+	padding:5px 0;
+	cursor:pointer;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 3px 0 #dedede;
+	box-shadow: 0 1px 3px 0 #dedede;
+}
+
+.rwb_box_info .boton:hover {
+	background-color:#ec7404;
+}
+
+/* rwb-transaccion-confirmada 
+    Se utiliza en las vistas que sirven de comprobantes de transaccion y pueden imprimirse, es relativo
+    al panel de comprobantes.  
+    
+    Ejemplo de uso:
+
+    // Estructura
+
+     <div class="rwb_transaccion_confirmada_wrapper_print">
+        <img class="rwb_transaccion_icono_exito_print" src="@Url.Content("~/imgs/common/widgets/widget_transaccion_confirmada/icono_exito.gif")" />
+        <div class="rwb_transaccion_confirmada_content">
+            <div class="rwb_transaccion_confirmada_strong"> transacción realizada con éxito</div>
+            tu petici&oacute;n ha sido realizada con éxito.
+        </div>
+    </div>
+*/
+
+.rwb_transaccion_confirmada_wrapper {
+    width: 100%;
+    background-image: url('../../imgs/common/widgets/widget_transaccion_confirmada/icono_exito.gif');
+    background-repeat:no-repeat;
+    background-position: 12px 13px;
+    color: #464646;
+    padding: 10px 0;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #ec7404;
+    float : left; /*agregado para que no se encime con el contenedor de pasos*/
+}
+
+.rwb_transaccion_confirmada_content{
+    position: relative;
+    border-top: 1px solid #d8d6d5;
+    border: 0 !important;
+    margin: 5px 6px 5px 40px;
+}
+
+.rwb_transaccion_confirmada_strong{
+    font-weight:bold;
+    font-size: 14px;
+    color: #ec7404;
+    margin-bottom:8px;
+}
+
+.rwb_transaccion_confirmada_strong_rdhb
+{
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.rwb_atencion_tri_wrapper {
+/*.rwb_pago_tarjeta_wrapper {*/
+    width: 100%;
+    background-image: url('../../imgs/common/avisos_atencion/icon_atencion_gauzy.png');
+    background-repeat:no-repeat;
+    background-position: 3px 8px;
+    color: #464646;
+    padding: 10px 0;
+    border-radius: 6px;
+    background-color: #fff;
+    /*border: none;*/
+    border: 1px solid #ec7404;
+    float : left; /*agregado para que no se encime con el contenedor de pasos*/
+}
+
+.rwb_atention_tri_no_border{
+    border:none;
+}
+
+.rwb_atencion_tri_content{
+/*.rwb_pago_tarjeta_content{*/
+    position: relative;
+    border-top: 1px solid #d8d6d5;
+    border: 0 !important;
+    margin: 5px 6px 5px 40px;
+}
+
+/* Estas clases son especificas para cuando queremos IMPRIMIR del lado del cliente con window.print */
+
+/* Por que no poner la imagen como background-image? Porque de esa manera al darle imprimir con window.print
+   en IE no muestra el icono por default. */
+/* Ponemos de vuelta el background porque no salía en icono en IE 8*/
+.rwb_transaccion_icono_exito_print{
+    float: left;
+    margin-top: 4px;
+    margin-left: 15px;
+    width: 16px;
+    height: 16px;
+    background-image:url("../../imgs/common/widgets/widget_transaccion_confirmada/icono_exito.gif");
+    background-repeat: no-repeat;
+    content:url("../../imgs/common/widgets/widget_transaccion_confirmada/icono_exito.gif");
+}
+
+.rwb_transaccion_confirmada_wrapper_print{
+    width:100%;
+    color: #464646;
+    padding: 10px 0;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 20px;
+    float : left; /*agregado para que no se encime con el contenedor de pasos*/
+}
+
+.rwb_transaccion_confirmada_wrapper_print_redisenho{
+    width:100%;
+    color: #464646;
+    padding: 8px 0;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 15px;
+    float : left; /*agregado para que no se encime con el contenedor de pasos*/
+}
+
+.rwb_transaccion_confirmada_wrapper_print_rdhb
+{
+    width: auto;
+    min-height: 25px;
+    box-shadow: 0 1px 1px 0 rgba(122, 109, 96, 0.24);
+    background-color: #007a47;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+}
+
+
+@media print
+{   
+    body {
+       max-height: 500px;
+       height:90%;
+       overflow:hidden;
+    }
+}
+
+ /*dynamic_panel_avisos_importantes*/ 
+#avisos ul {
+    margin: 5px 0 5px 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+#avisos li {
+    list-style: disc inside;
+    color: #ec7404;
+    margin-bottom: 5px;
+}
+
+#avisos li a {
+    color: #464646;
+    text-decoration: underline;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+ /* Box de destaques */
+.box_info_destaque { border: none; background: #efefef; }
+.box_info_destaque h3 { color: #464646; }
+.box_info_destaque p { margin: 0 0 5px 0; line-height: 14px; }
+.box_info_destaque .contenido{
+    margin: 0;
+    padding: 15px 30px;
+}
+
+/* RDHB Error box*/
+.rwb_box_info_rdhb span.icono {
+    display: block;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    margin-left: 24px;
+    margin-top: 11px;
+    background-position: -1px 0px !important;
+}
+
+.rwb_box_info_rdhb {
+    width: 702px;
+    height: 67px;
+    border-radius: 4px;
+    border: solid 1px #ec7000;
+    margin: 32.5px 0px;
+    background-color: #FFFFFF;
+}
+
+.rwb_box_info_rdhb .contenido {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #231d19;
+    margin: 16px 16px 16px 60px;
+    position: relative;
+    float: left;
+    margin: 10px 6px 10px 35px;
+    border: 0 !important;
+}
+
+.rwb_box_page_error {
+    width: 100%;
+    height: 67px;
+    border-radius: 4px;
+    border: solid 1px #ec7000;
+    background-color: #FFFFFF;
+}
+
+.rwb_box_page_error span.icono {
+    display: block;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    margin-left: 24px;
+    margin-top: 11px;
+    background-position: -1px 0px !important;
+    background: url(/../imgs/common/widgets/alert.png) bottom left no-repeat #fff;
+}
+
+.rwb_box_page_error .contenido {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #231d19;
+    margin: 16px 16px 16px 60px;
+    position: relative;
+    float: left;
+    border: 0 !important;
+}
+
+/* RDHB */
+.rwb_box_displayErrorRDHB {
+    width: 100%;
+    height: 67px;
+    border-radius: 4px;
+    border: solid 1px #531e6d;
+    background-color: #531e6d;
+}
+
+.rwb_box_displayErrorRDHB span.icono {
+    display: block;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    margin-left: 24px;
+    margin-top: 11px;
+    background-position: -1px 0px !important;
+    background: url(../../../../../imgs/common/widgets/alert_white.png) bottom left no-repeat;
+}
+
+.rwb_box_displayErrorRDHB .contenido {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #FFFFFF;
+    margin: 16px 16px 16px 60px;
+    position: relative;
+    float: left;
+    border: 0 !important;
+}

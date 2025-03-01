@@ -1,0 +1,160 @@
+﻿/*Estilo para Itaú Persona Base*/
+
+/*-- Borde simple --*/
+.rwb_static_simple_border {
+    border: 1px solid #ec7404;
+}
+
+/*-- Link --*/
+.rwb_link:hover {
+    color: #EC7404 !important;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+}
+
+    .rwb_link:hover h3 {
+        color: #EC7404 !important;
+        background: #fff;
+        -webkit-transition: all 300ms ease-in;
+        -moz-transition: all 300ms ease-in;
+        -ms-transition: all 300ms ease-in;
+        -o-transition: all 300ms ease-in;
+    }
+
+/*Redisenho de Tarjetas Index*/
+.rwb_link_redisenho_index:hover {
+    color: #FFF !important;
+    background: #EC7404;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    background-image: url('../../imgs/common/widgets/arrow-right-white.png');
+    background-size: 8px 13px;
+    background-repeat: no-repeat;
+    background-position: 292px center;
+}
+
+.rwb_link_redisenho_index:hover h3 {
+    color: #fff !important;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+}
+
+.rwb_link_redisenho_index_pb:hover {
+    color: #FFF !important;
+    /*background: #EC7404;*/
+    background: #B09F71;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    background-image: url('../../imgs/common/widgets/arrow-right-white.png');
+    background-size: 8px 13px;
+    background-repeat: no-repeat;
+    background-position: 292px center;
+}
+
+.rwb_link_redisenho_index_pb:hover h3 {
+        color: #fff !important;
+        -webkit-transition: all 300ms ease-in;
+        -moz-transition: all 300ms ease-in;
+        -ms-transition: all 300ms ease-in;
+        -o-transition: all 300ms ease-in;
+    }
+
+/*Redisenho de Tarjetas*/
+.rwb_link_redisenho:hover {
+    color: #FFF !important;
+    background: #EC7404;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    background-image: url('../../imgs/common/widgets/arrow-right-white.png');
+    background-size: 8px 13px;
+    background-repeat: no-repeat;
+    background-position: 205px center;
+}
+
+    .rwb_link_redisenho:hover h3 {
+        color: #fff !important;
+        -webkit-transition: all 300ms ease-in;
+        -moz-transition: all 300ms ease-in;
+        -ms-transition: all 300ms ease-in;
+        -o-transition: all 300ms ease-in;
+    }
+
+
+/*-- Input --*/
+.rwb_input:focus {
+    border: 1px solid #ec7404;
+    outline: 0;
+    -moz-box-shadow: 0 0 5px rgba(236, 116, 4, .8);
+    -webkit-box-shadow: 0 0 5px rgba(236, 116, 4, .8);
+    box-shadow: 0 0 5px rgba(236, 116, 4, .8);
+    color: #464646;
+}
+
+.rwb_icono_tarjeta_blanca {
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    background-image: url('../../imgs/area/home/controllers/home/right_panel/persona_common/icon_pago_tc_gauzy.png') !important;
+}
+
+.rwb_icono_comprobante_blanco {
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    background-image: url('../../imgs/area/home/controllers/home/right_panel/persona_fisica/persona_common/icon_comprobante_blanco.svg') !important;
+    /*background-image: url('../../imgs/area/home/controllers/home/right_panel/persona_common/icono_comprobantes.png') !important;
+    background-position: right;*/
+}
+
+.rwb_icono_factura_blanco {
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    background-image: url('../../imgs/area/home/controllers/home/right_panel/persona_fisica/persona_common/icon_factura_blanco.svg') !important;
+}
+
+.rwb_right_menu_link_ancho {
+    width: 282px;
+    position: relative;
+    float: left;
+    background-color: #fff;
+    background-image: url('../../imgs/common/widgets/arrow-right-grey.png');
+    background-size: 8px 13px;
+    background-repeat: no-repeat;
+    background-position: 290px center;
+    border: 1px solid #c8c8c8;
+    -webkit-border-radius: 6px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    padding-right: 18px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+    color: #464646;
+}
+
+.rwb_icon_24 {
+    width: 24px;
+    font-size: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}

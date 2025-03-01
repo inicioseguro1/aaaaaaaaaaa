@@ -1,0 +1,69 @@
+﻿/*Estilo para Itaú Persona Física*/
+
+/*-- Icono de lista en Productos y Servicios --*/
+.rwb_menu li#menu_productos .submenu .column li {
+    color: #EC7404 !important;
+    margin-left: 5px;
+}
+
+
+.rwb_noticias_small_panel_content_item {
+    color: #ec7404 !important;
+    list-style: disc outside;
+    margin-left: 5px;    
+}
+
+/*Signo de exclamación, div de avisos generales del home*/
+.rwb_aviso_alerta_general {
+    background-image: url('../../imgs/common/avisos_atencion/icono_alerta_gd.gif');
+}
+
+/*Signo de exlamación, div de avisos*/
+.rwb_box_info span.icono { 
+    background: url("../../imgs/common/avisos_atencion/sprite-info.png") bottom left no-repeat #fff;
+}
+
+.rwb_box_info_gris span.icono { 
+    background: url("../../imgs/common/avisos_atencion/icon_atencion_gauzy.png") bottom left no-repeat;
+    background-position: 0px 3px;
+}
+
+.rwb_icono_tarjeta_naranja {
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    background-image: url('../../imgs/area/home/controllers/home/right_panel/persona_fisica/icon_pago_de_tarjetas_n.png') !important;  
+}
+
+.rwb_icono_comprobante_naranja {
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    background-image: url('../../imgs/area/home/controllers/home/right_panel/persona_fisica/persona_common/icon_comprobante_naranja.svg') !important;  
+}
+
+.rwb_icono_comprobante_naranja_pb {
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    background-image: url('../../imgs/area/home/controllers/home/right_panel/persona_fisica/personal_bank/icon_comprobante_mostaza.svg') !important;  
+}
+
+.rwb_icono_factura_naranja {
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    background-image: url('../../imgs/area/home/controllers/home/right_panel/persona_fisica/persona_common/icon_factura_naranja.svg') !important;  
+}
+
+.rwb_icono_factura_naranja_pb {
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    background-image: url('../../imgs/area/home/controllers/home/right_panel/persona_fisica/personal_bank/icon_factura_mostaza.svg') !important;  
+}

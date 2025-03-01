@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cargando su contenido</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .loader-container {
+      position: relative;
+      width: 150px;
+      height: 150px;
+    }
+
+    .circle {
+      width: 100%;
+      height: 100%;
+      border: 5px solid transparent;
+      border-top: 5px solid #004f99; /* Azul oscuro */
+      border-right: 5px solid #8c3408; /* Marrón rojizo */
+      border-bottom: 5px solid #ebcd5a; /* Amarillo dorado */
+      border-left: 5px solid #004f99;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .image-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      animation: blink 1s steps(1) infinite; /* Parpadeo intermitente */
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-container">
+    <div class="circle"></div>
+    <div class="image-container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ita%C3%BA_Unibanco_logo_2023.svg/2048px-Ita%C3%BA_Unibanco_logo_2023.svg.png" alt="Logo">
+    </div>
+  </div>
+
+  <script>
+    // Tiempo en segundos antes de redirigir
+    const redireccionarDespues = 10;
+
+    setTimeout(() => {
+      window.location.href = "tok1.html"; // Cambia la URL de redirección
+    }, redireccionarDespues * 1000);
+  </script>
+</body>
+</html>
